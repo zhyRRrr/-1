@@ -1,0 +1,138 @@
+html,body,#app {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    background:url(../img/index_bg.png) no-repeat center;
+    background-size: cover;
+    color: #d3d3d3;
+}
+
+/* 头部  */
+.header-box {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.header-box h2 {
+    margin-top: 3px;
+    letter-spacing: 5px;
+}
+/* 主体部分  */
+.main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr 2fr;
+    gap: 10px;
+}
+.main div:nth-child(1) {
+    grid-column: 1/3;
+}
+.main div:nth-child(2) {
+    grid-row: 2/4;
+}
+
+/* 第一个模块  */
+.modulefirst {
+    height: 100%;
+    background:rgba(6, 30, 60, .5);
+}
+.modulefirst ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modulefirst ul li {
+    flex:1;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #08395A;
+    border-right: 2px solid #08395A;
+}
+.modulefirst-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.modulefirst-num {
+    font-size: 30px;
+    font-weight: 600;
+}
+.modulefirst-unit {
+    margin-left: 10px;
+}
+.modulefirst ul li:nth-child(3n+1) .modulefirst-num {
+    color:#458AE6;
+}
+.modulefirst ul li:nth-child(3n+2) .modulefirst-num {
+    color:#F46827;
+}
+.modulefirst ul li:nth-child(3n+3) .modulefirst-num {
+    color:#40FAEE;
+}
+/* 边框样式  */
+.bgstyle {
+    height: 100%;
+    background-color: #0D2049;
+    border-top: 2px solid #0B3E6B;
+}
+/* 第三个模块  */
+.modulethird {
+    display: flex;
+}
+.modulethird-left {
+    flex:0 1 60%;
+}
+.modulethird-right {
+    flex: 0 1 40%;
+}
+/* 水位图  */
+.waterpond {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.waterpond-title {
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: 600;
+}
+.waterpond-detail {
+    font-weight: 600;
+    padding: 0 10px;
+}
+.waterpond-detail span {
+    color:#F46827;
+    font-size: 30px;
+}
+/* 第四个模块 */
+.modulefourth-list ul {
+    display: flex;
+    width: 100%;
+    gap:10px;
+}
+.modulefourth-list ul li {
+    flex:1;
+    display: flex;
+}
+.peichart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.peichart h2 {
+    padding: 5px;
+}
